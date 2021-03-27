@@ -1,9 +1,11 @@
 import React from 'react';
+import RainOnImage from "./../components/RainOnImage/RainOnImage";
 import TextWithToolTip from "../components/Molecules/TextWithTooltip";
 
 const Home = () => {
     return (
       <div>
+        <RainOnImage />
         <h3>Who am I?</h3>
         <p>I'm a web developer with over 2 years of professional experience of working in an Agile team.</p>
         <p>Offering my front-end skills to create and improve dynamic and responsive web pages, with the possibility to create reports and BE code.</p>
