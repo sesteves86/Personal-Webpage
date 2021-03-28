@@ -1,6 +1,11 @@
 .title{
-    overflow: hidden;
-    background: black;
+    font-weight: bold;
 
-    border: 1px solid pink;
+    &__main {
+        color: $darkBlue;
+    }
+
+    &__secondary {
+        color: $brown;
+    }
 }

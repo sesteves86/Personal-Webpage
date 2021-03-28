@@ -1,0 +1,21 @@
+.tiles {
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3em;
+    }
+    
+    &__item {
+        background-color: $grey-white;
+        border: 1px solid $brown;
+        border-radius: 1.5em;
+        padding: 2em;
+        width: 20em;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 1.6em;
+    }
+}
