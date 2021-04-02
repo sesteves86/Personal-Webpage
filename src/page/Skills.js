@@ -29,8 +29,8 @@ const Skills = () => {
               </li>
               <li>
                 <TextWithToolTip 
-                  pText="CSS, ITCSS, SCSS"
-                  tText="Over 2 years experience"
+                  pText="React"
+                  tText="1 year experience"
                 />
                 , Vue
               </li>

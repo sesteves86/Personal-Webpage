@@ -1,0 +1,15 @@
+.contact {
+    &__container {
+        background-color: $lightBlue;
+        padding: 2em;
+    }
+
+    &__input {
+        margin-bottom: 1em;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+}
