@@ -1,12 +1,9 @@
-import React, {Fragment} from 'react';
+import React from "react";
 import TextWithToolTip from "../components/TextWithTooltip";
 
-const HireMe = () => {
+const Skills = () => {
+
     return (
-      <div className="hireMe__container">
-        <h3 class="hireMe__title">My career</h3>
-        <p>I've been a web developer since 2018. I've done a few freelance simple projects, before joining Vizolution. There I quickly learned the basics and started creating journeys to big brands, like Santander and BNPP. </p>
-        <h3 class="hireMe__title">Skills</h3>
         <div className="tiles__container">
           <div className="tiles__item">
             <h3 className="tiles__title">Front End</h3>
@@ -75,12 +72,8 @@ const HireMe = () => {
           </ul>
           </div>
         </div>
-        <div>
-          Interested in knowing more?
-          <button type="button" className="button hireMe__button">Contact me</button>
-        </div>
-      </div>
-    );
-}
+        
+    )
+};
 
-export default HireMe;
+export default Skills;

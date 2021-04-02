@@ -1,0 +1,16 @@
+.imageButton{
+
+    &__button {
+        background-color: $white;
+        border: none;
+
+        &:hover{
+            box-shadow: 0 0 3px $base;
+        }
+    }
+
+    &__image {
+        height: 50px;
+        width: 50px;
+    }
+}

@@ -1,10 +1,10 @@
 .button {
-    background-color: $brown;
+    background-color: $darkBlue;
     border-radius: 1em;
     color: $white;
     padding: 0.5em;
 
     &:hover{
-        background-color: $darkBlue;
+        box-shadow: 0 0 5px $base;
     }
 }
