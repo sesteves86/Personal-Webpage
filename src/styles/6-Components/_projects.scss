@@ -1,0 +1,27 @@
+.projects {
+
+    &__container {
+        border: 1px solid $black;
+        display: flex;
+        margin: 0.5em 0;
+        padding: 0.5em;
+    }
+
+    &__image {
+        width: 100px;
+    }
+
+    &__textContainer {
+        margin-left: 1em;
+    }
+    
+    &__textHeader {
+        color: $black;
+        font-size: 1.6rem;
+        text-decoration: none;
+        
+        &:hover {
+            color: $black;
+        }
+    }
+}
