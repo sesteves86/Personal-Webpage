@@ -4,9 +4,9 @@ import TextWithToolTip from "../components/TextWithTooltip";
 const Skills = () => {
 
     return (
-        <div className="tiles__container">
-          <div className="tiles__item">
-            <h3 className="tiles__title">Front End</h3>
+        <div className="skillTiles__container">
+          <div className="skillTiles__item">
+            <h3 className="skillTiles__title">Front End</h3>
             <ul>
               <li>
                 <TextWithToolTip 
@@ -38,8 +38,8 @@ const Skills = () => {
             </ul>
           </div>
 
-          <div className="tiles__item">
-          <h3 className="tiles__title">Back End</h3>
+          <div className="skillTiles__item">
+          <h3 className="skillTiles__title">Back End</h3>
           <ul>
             <li>C#</li>
             <li>MVC, .Net</li>
@@ -47,8 +47,8 @@ const Skills = () => {
           </ul>
           </div>
 
-          <div className="tiles__item">
-          <h3 className="tiles__title">Others</h3>
+          <div className="skillTiles__item">
+          <h3 className="skillTiles__title">Others</h3>
           <ul>
             <li>
               <TextWithToolTip 
