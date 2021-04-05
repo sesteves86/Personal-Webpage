@@ -33,7 +33,7 @@ const KnowMe = () => {
               alt="blogger"
               onClick={() => {window.open("https://saeprogramming.blogspot.com/"); }}
             />
-            <button type="button" className="button knowMe__button" onClick={() => {window.location.replace("/contact")}}>Contact me</button>
+            <button type="button" className="button knowMe__button" onClick={() => {window.location.replace("./contact")}}>Contact me</button>
           </div>
         </section>
       </div>
