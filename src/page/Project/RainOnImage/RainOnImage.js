@@ -26,6 +26,7 @@ const RainOnImage = ( props) => {
         image1.src = base64Image;
         
         image1.addEventListener("load", () => {
+            ctx.globalAlpha = 1;
             ctx.drawImage(image1, 0, 0, canvas.width, canvas.height);
             const pixels = ctx.getImageData( 0, 0, canvas.width, canvas.height);
 
@@ -43,13 +44,6 @@ const RainOnImage = ( props) => {
                     // const brightness = Math.sqrt((red*red*0.299) + (green*green*0.587) + (blue*blue*0.114))/255;
                     const brightness = Math.sqrt((red*red) + (green*green) + (blue*blue))/256;
 
-                    if (brightness >= 1)
-                        console.log("Too bright");
-                    
-                    if (brightness > 0.1){
-                        console.log("good brightness");
-                    }
-
                     const cell = {brightness, red, green, blue} ;
                     row.push(cell);
                 }
@@ -57,7 +51,7 @@ const RainOnImage = ( props) => {
                 mappedImage.push(row);
             }
             console.log("Mapped image crated");
-            console.log(mappedImage);
+            // console.log(mappedImage);
         })
 
         //Create particles
@@ -98,10 +92,20 @@ const RainOnImage = ( props) => {
 
     return (
         <Fragment>
-            <label htmlFor="base64Image">Base 64 Image</label>
-            <input name="base64Image" type="text" onChange={onBase64ImageChange} value={base64Image}/>
-            <label htmlFor="noOfParticles">Number of rain drops</label>
-            <input name="noOfParticles" type="text" onChange={onNParticlesChange} value={numberOfParticles} />
+            <h1>Rain on Image</h1>
+            <p>This effect was based on this <a href="https://www.youtube.com/watch?v=UoTxOVEecbI" >freeCodeCamp's youtube video</a>.</p>
+            <p>On this project, I've tweaked it and converted into a React component.</p>
+
+            <div className="p-rainOnImage__inputContainer">
+                <div className="p-rainOnImage__singleInputContainer">
+                    <label htmlFor="base64Image">Base 64 Image</label>
+                    <input name="base64Image" type="text" onChange={onBase64ImageChange} value={base64Image}/>
+                </div>
+                <div className="p-rainOnImage__singleInputContainer">
+                    <label htmlFor="noOfParticles">Number of rain drops</label>
+                    <input name="noOfParticles" type="text" onChange={onNParticlesChange} value={numberOfParticles} />
+                </div>
+            </div>
             <canvas className="p-rainOnImage__canvas" ref={canvasRef} {...props}/>
         </Fragment>
     );

@@ -1,5 +1,17 @@
 .p-rainOnImage {
     &__canvas {
-        width: 800px;
+        width: 80%;
+    }
+
+    &__inputContainer {
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+    }
+
+    &__singleInputContainer {
+        display: flex;
+        flex-direction: column;
+        margin: 1em;
     }
 };

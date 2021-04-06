@@ -17,10 +17,10 @@ const Home = () => {
         
         <ProjectTile
           href = "/project/rain-on-image"
-          imageSrc = "bloggerLogo.png"
+          imageSrc = "RainOnImage.PNG"
           imageAlt = "Rain on image project"
           title = "Rain on image"
-          text = "Rain on image some very long text with a lot of words"
+          text = "Rain on image effect. Feel free to try with your own base64 image."
         />
 
       </div>
