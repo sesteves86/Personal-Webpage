@@ -8,7 +8,7 @@ const Home = () => {
         <p>Here's a sample of personal projects that I've done recently.</p>
 
         <ProjectTile
-          href = "/project/flamme-rouge"
+          href = "./project/flamme-rouge"
           imageSrc = "bloggerLogo.png"
           imageAlt = "Flamme Rouge project"
           title = "Flamme Rouge"
@@ -16,7 +16,7 @@ const Home = () => {
         />
         
         <ProjectTile
-          href = "/project/rain-on-image"
+          href = "./project/rain-on-image"
           imageSrc = "RainOnImage.PNG"
           imageAlt = "Rain on image project"
           title = "Rain on image"
